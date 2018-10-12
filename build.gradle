@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName="com.amazonaws.samples.DynamoDBSample"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.amazonaws:aws-java-sdk:1.11.426'
+
+    //dynamoDB MAPPER.
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-dynamodb', version: '1.11.426'
+
+
+}
